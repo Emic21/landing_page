@@ -6,7 +6,7 @@ import Section from "./components/Section";
 const App = () => {
   return (
     <div className="relative">
-      <header className="flex justify-between items-center px-24 py-4">
+      <header className="flex justify-between bg-gray-300 items-center px-24 py-4">
         <div className="flex space-x-8">
           <h1 className="text-[#505F98] text-sm font-normal">Home</h1>
           <h1 className="text-[#505F98] text-sm font-normal">About</h1>
