@@ -87,16 +87,16 @@ const App = () => {
       {/* HERO SECTION */}
       <div className="flex flex-col md:flex-row gap-8 min-h-screen items-center justify-center px-6 md:px-24 py-12 md:py-0">
         {/* INFO */}
-        <div className="w-full md:w-[40%] flex flex-col items-start justify-center space-y-4 md:space-y-6 order-2 md:order-1">
+        <div className="w-full md:w-[40%] flex flex-col items-center md:items-start justify-center space-y-4 md:space-y-6 order-2 md:order-1">
           <h2 className="text-2xl md:text-3xl text-[#091133] font-semibold text-center md:text-left">
             Introduce Your Product Quickly & Effectively
           </h2>
-          <p className="text-sm text-[#091133] text-center md:text-left">
+          <p className="text-sm text-[#091133] text-center md:text-left leading-relaxed">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
             penatibus et magnis dis parturient montes, nascetur ridiculus mus.
           </p>
-          <p className="text-sm text-[#091133] text-center md:text-left">
+          <p className="text-sm text-[#091133] text-center md:text-left leading-relaxed">
             Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
             Nulla consequat massa quis enim.
           </p>
@@ -107,11 +107,11 @@ const App = () => {
         </div>
         
         {/* HERO IMAGE */}
-        <div className="w-full md:w-[60%] flex items-center justify-center relative order-1 md:order-2 mb-8 md:mb-0">
+        <div className="w-full md:w-[60%] flex items-center justify-center order-1 md:order-2 mb-8 md:mb-0">
           <img
             src="/heroimage.svg"
-            className="w-full md:w-[60%] object-cover md:absolute md:-right-24"
-            alt="heroimage"
+            className="w-full max-w-md md:max-w-full object-contain"
+            alt="Hero illustration showing product introduction"
           />
         </div>
       </div>
@@ -119,31 +119,31 @@ const App = () => {
       {/* SECTION ONE */}
       <div className="flex flex-col md:flex-row gap-8 min-h-screen items-center justify-center px-6 md:px-24 py-12 md:py-0">
         {/* INFO */}
-        <div className="w-full md:w-[50%] flex flex-col items-start space-y-4 md:space-y-6 order-2 md:order-1">
+        <div className="w-full md:w-[50%] flex flex-col items-center md:items-start space-y-4 md:space-y-6 order-2 md:order-1">
           <h2 className="text-2xl md:text-3xl text-[#091133] font-medium text-center md:text-left">
             Light, Fast & Powerful
           </h2>
-          <p className="text-[#6F7CB2] text-[14px] md:text-[16px] font-normal text-center md:text-left">
+          <p className="text-[#6F7CB2] text-[14px] md:text-[16px] font-normal text-center md:text-left leading-relaxed">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
             penatibus et magnis dis parturient montes, nascetur ridiculus
           </p>
-          <p className="text-[#6F7CB2] text-[14px] md:text-[16px] font-normal text-center md:text-left pb-8 md:pb-20">
+          <p className="text-[#6F7CB2] text-[14px] md:text-[16px] font-normal text-center md:text-left leading-relaxed pb-8 md:pb-12">
             mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
             sem. Nulla consequat massa quis enim.
           </p>
-          <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-4 mt-4 md:mt-10 w-full">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-6 mt-4 md:mt-8 w-full justify-center md:justify-start">
             <IconInfo />
             <IconInfo />
           </div>
         </div>
         
         {/* IMAGE */}
-        <div className="w-full md:w-[50%] flex items-center justify-center relative order-1 md:order-2 mb-8 md:mb-0">
+        <div className="w-full md:w-[50%] flex items-center justify-center order-1 md:order-2 mb-8 md:mb-0">
           <img
             src="/section1image.svg"
-            className="w-full md:w-[90%] object-cover md:absolute md:right-0"
-            alt="section1image"
+            className="w-full max-w-md md:max-w-full object-contain"
+            alt="Light, fast and powerful product illustration"
           />
         </div>
       </div>
@@ -159,6 +159,7 @@ const App = () => {
             sem. Nulla consequat massa quis enim.`}
       />
 
+      {/* SECTION THREE */}
       <Section
         img={"/section3image.svg"}
         title={"Light, Fast & Powerful"}
@@ -169,6 +170,7 @@ const App = () => {
             sem. Nulla consequat massa quis enim.`}
       />
 
+      {/* SECTION FOUR */}
       <Section
         img={"/section4image.svg"}
         title={"Light, Fast & Powerful"}
@@ -181,22 +183,22 @@ const App = () => {
       />
 
       {/* PRICING SECTION */}
-      <div className="relative py-20 md:py-40">
+      <div className="relative py-20 md:py-40 min-h-[500px] md:min-h-[700px] flex items-center justify-center">
         <img 
-          src="pricebackground.svg" 
-          alt="pricebackgroundimage" 
-          className="w-full object-cover absolute inset-0 -z-10" 
+          src="/pricebackground.svg" 
+          alt="Pricing section background" 
+          className="w-full h-full object-cover absolute inset-0 -z-10" 
         />
-        <div className="text-center px-6 md:px-0 relative z-10">
-          <h2 className="text-2xl md:text-3xl text-[#091133] font-medium mt-10 md:mt-40 p-5">
+        <div className="text-center px-6 md:px-0 relative z-10 w-full max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl text-[#091133] font-medium mb-6">
             A Price To Suit Everyone
           </h2>
-          <p className="text-[#6F7CB2] text-[14px] md:text-[16px] font-normal mx-auto max-w-2xl">
+          <p className="text-[#6F7CB2] text-[14px] md:text-[16px] font-normal mx-auto max-w-2xl mb-8 leading-relaxed">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
           </p>
-          <p className="text-[#222F65] text-2xl md:text-3xl font-semibold pt-5">$40</p>
-          <p className="text-[#37447E] text-[14px] md:text-[16px] font-normal">UI Design Kit</p>
-          <p className="text-[#5D6970] text-[14px] md:text-[16px] font-normal pb-2 pt-6 md:pt-10">
+          <p className="text-[#222F65] text-2xl md:text-3xl font-semibold mb-2">$40</p>
+          <p className="text-[#37447E] text-[14px] md:text-[16px] font-normal mb-6">UI Design Kit</p>
+          <p className="text-[#5D6970] text-[14px] md:text-[16px] font-normal mb-8">
             See, One price. Simple.
           </p>
           <div className="flex justify-center">
@@ -227,11 +229,11 @@ const App = () => {
           </div>
           
           <div className="flex space-x-3 order-1 md:order-2">
-            <img src="/facebook.svg" alt="Facebook Logo" className="cursor-pointer hover:opacity-80 transition-opacity" />
-            <img src="/Instagram.svg" alt="Instagram logo" className="cursor-pointer hover:opacity-80 transition-opacity" />
-            <img src="/linklin.svg" alt="LinkedIn logo" className="cursor-pointer hover:opacity-80 transition-opacity" />
-            <img src="/youtube.svg" alt="YouTube logo" className="cursor-pointer hover:opacity-80 transition-opacity" />
-            <img src="/twitter.svg" alt="Twitter logo" className="cursor-pointer hover:opacity-80 transition-opacity" />
+            <img src="/facebook.svg" alt="Facebook Logo" className="cursor-pointer hover:opacity-80 transition-opacity w-5 h-5" />
+            <img src="/Instagram.svg" alt="Instagram logo" className="cursor-pointer hover:opacity-80 transition-opacity w-5 h-5" />
+            <img src="/linklin.svg" alt="LinkedIn logo" className="cursor-pointer hover:opacity-80 transition-opacity w-5 h-5" />
+            <img src="/youtube.svg" alt="YouTube logo" className="cursor-pointer hover:opacity-80 transition-opacity w-5 h-5" />
+            <img src="/twitter.svg" alt="Twitter logo" className="cursor-pointer hover:opacity-80 transition-opacity w-5 h-5" />
           </div>
         </div>
       </footer>
